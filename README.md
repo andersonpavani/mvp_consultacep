@@ -4,7 +4,7 @@
 MVP (Minimum Viable Product) desenvolvido para realizar consultas de CEP utilizando o serviço público do [ViaCEP](https://viacep.com.br/). 
 
 ## Motivação
-O projeto foi desenvolvido como parte de um desafio técnico para uma entrevista de emprego, com foco em demonstrar o uso de componentes próprios, integração com APIs públicas e aplicação de princípios de engenharia de software.
+O projeto foi desenvolvido como parte de um desafio técnico, com foco em demonstrar o uso de componentes próprios, integração com APIs públicas e aplicação de princípios de engenharia de software.
 
 ## Tecnologias Utilizadas
 - **Delphi 12 (versão de demonstração)**
@@ -52,8 +52,9 @@ O sistema é uma aplicação Windows (VCL) com interface gráfica. Para executá
 - **Interface Segregation Principle (ISP)**: Interfaces são específicas e não obrigam os consumidores a implementar métodos que não usam.
 - **Dependency Inversion Principle (DIP)**: A aplicação depende de abstrações, não de implementações concretas.
 - **Arquitetura em Camadas**: A estrutura do código foi cuidadosamente projetada para seguir os princípios de design SOLID, garantindo uma arquitetura flexível, extensível e de fácil manutenção. Cada camada da aplicação é responsável por uma parte específica da lógica, respeitando a separação de responsabilidades e facilitando futuras expansões ou alterações.
-    ![Camadas SOLID](Doc/CamadasSOLID.png)
-    A substituição de componentes e tecnologias utilizadas poderá ser feita com facilidade. A Camada de Aplicação(Service) faz acesso aos repositórios fazendo o uso de Protocolos(Interfaces) através inversão de dependência, isso possibilita a troca da Base de Dados Postgres por outra como MongoDB, Oracle ou até mesmo por uma API Rest facilmente adicionando apenas os _Repostiories_ e alterando a _Unit Factory_; e o mesmo se aplica ao componete criado/utilizado para consulta a ViaCEP. Na camada View temos o Form VCL, que por conta do isolamento, pode ser substituido por um Form FireMonkey ou até mesmo por componentes HTML Server possibilitando a transformação desses software em uma API Rest sem nenhuma alteração nas demais camadas.
+![Camadas SOLID](Doc/CamadasSOLID.png)
+A substituição de componentes e tecnologias utilizadas poderá ser feita com facilidade. A Camada de Aplicação(Service) faz acesso aos repositórios fazendo o uso de Protocolos(Interfaces) através inversão de dependência, isso possibilita a troca da Base de Dados Postgres por outra como MongoDB, Oracle ou até mesmo por uma API Rest facilmente adicionando apenas os _Repostiories_ e alterando a _Unit Factory_; e o mesmo se aplica ao componete criado/utilizado para consulta a ViaCEP. Na camada View temos o Form VCL, que por conta do isolamento, pode ser substituido por um Form FireMonkey ou até mesmo por componentes HTML Server possibilitando a transformação desses software em uma API Rest sem nenhuma alteração nas demais camadas.
+
 ## TODO List
 - **Criptografia de senhas**: Implementar a criptografia da senha no arquivo de configurações (`Config.ini`) para maior segurança.
 - **Thread para consultas**: Implementar o uso de Threads no fluxo principal de Busca da aplicação para evitar o bloqueio da interface.
