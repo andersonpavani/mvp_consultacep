@@ -22,7 +22,7 @@ Para compilar e testar o projeto, siga os passos abaixo:
    - Edite o arquivo `Config.ini`, inserindo as informações de acesso ao banco de dados (host, usuário, senha, etc.).
 
 3. **Instalar o componente personalizado**:
-   - Instale no Delphi o Pacote de Componentes em _Component/MVPComponents_ que contém o componente ConsultaCEP. Esse componente é parte essencial do projeto e deve estar corretamente configurado antes da compilação.
+   - Instale no Delphi o Pacote de Componentes em _Component/MVPComponents_ que contém o componente ConsultaCEP. Esse componente é parte essencial do projeto e deve estar corretamente configurado antes da compilação. Obs.: Talvez seja necessário adicionar o caminho do _.pas_ do componente ao Library Path do Projeto.
 
 4. **Compilar o projeto**:
    - Abra o projeto no Delphi 12 e compile-o normalmente.
@@ -31,7 +31,7 @@ Para compilar e testar o projeto, siga os passos abaixo:
 O sistema é uma aplicação Windows (VCL) com interface gráfica. Para executá-lo, siga os passos abaixo:
 
 1. **Configurar o banco de dados**: Instale o Client do PostgreSQL e edite o arquivo `Config.ini` corretamente.
-2. **Iniciar a aplicação**: Execute o arquivo Win64\Release\PrConsultarArmazenarCEP.exe gerado após a compilação.
+2. **Iniciar a aplicação**: Execute o arquivo Win64/Release/PrConsultarArmazenarCEP.exe gerado após a compilação.
 3. **Utilizando a aplicação**: Estando tudo certo, você verá a tela abaixo. A aplicação permite consultas de CEP utilizando a API do ViaCEP.
 
 ![Tela Principal](Doc/TelaPrincipal.png)
