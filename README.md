@@ -22,7 +22,7 @@ Para compilar e testar o projeto, siga os passos abaixo:
    - Edite o arquivo `Config.ini`, inserindo as informações de acesso ao banco de dados (host, usuário, senha, etc.).
 
 3. **Instalar o componente personalizado**:
-   - Instale o componente de acesso ao Web Service da ViaCEP no Delphi. Esse componente é parte essencial do projeto e deve estar corretamente configurado antes da compilação.
+   - Instale no Delphi o Pacote de Componentes em _Component/MVPComponents_ que contém o componente ConsultaCEP. Esse componente é parte essencial do projeto e deve estar corretamente configurado antes da compilação.
 
 4. **Compilar o projeto**:
    - Abra o projeto no Delphi 12 e compile-o normalmente.
