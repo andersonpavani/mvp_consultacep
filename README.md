@@ -53,6 +53,7 @@ O sistema é uma aplicação Windows (VCL) com interface gráfica. Para executá
 - **Dependency Inversion Principle (DIP)**: A aplicação depende de abstrações, não de implementações concretas.
 - **Arquitetura em Camadas**: A estrutura do código foi cuidadosamente projetada para seguir os princípios de design SOLID, garantindo uma arquitetura flexível, extensível e de fácil manutenção. Cada camada da aplicação é responsável por uma parte específica da lógica, respeitando a separação de responsabilidades e facilitando futuras expansões ou alterações.
 ![Camadas SOLID](Doc/CamadasSOLID.png)
+
 A substituição de componentes e tecnologias utilizadas poderá ser feita com facilidade. A Camada de Aplicação(Service) faz acesso aos repositórios fazendo o uso de Protocolos(Interfaces) através inversão de dependência, isso possibilita a troca da Base de Dados Postgres por outra como MongoDB, Oracle ou até mesmo por uma API Rest facilmente adicionando apenas os _Repostiories_ e alterando a _Unit Factory_; e o mesmo se aplica ao componete criado/utilizado para consulta a ViaCEP. Na camada View temos o Form VCL, que por conta do isolamento, pode ser substituido por um Form FireMonkey ou até mesmo por componentes HTML Server possibilitando a transformação desses software em uma API Rest sem nenhuma alteração nas demais camadas.
 
 ## TODO List
